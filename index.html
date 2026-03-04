@@ -277,7 +277,7 @@ function Dashboard({user}){
           <div><div style={{fontSize:"0.82rem",fontWeight:600,color:G.text}}>{v.producto||"Venta"}</div>
           <div style={{fontSize:"0.68rem",color:G.dim}}>{v.vendedor||"—"} · {v.fecha}</div></div>
         </div>
-        <div style={{textAlign:"right"}}>
+        <div style={{textAlign:"right",flexShrink:0}}>
           <div style={{fontSize:"0.85rem",fontWeight:700,color:br.accent}}>{fmt(v.total)}</div>
           <div style={{fontSize:"0.68rem",color:G.green}}>+{fmt(v.utilidad)}</div>
         </div>
